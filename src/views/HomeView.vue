@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="text-slate-800">
+    <p>Home page</p>
+    <p>It works</p>
+
+    <p>Counter is : {{ counter }}</p>
+
+    <button class="btn" @click="counter++">
+      inc
+    </button>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script setup lang="ts">
+import { ref } from 'vue'
 
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
+const counter = ref(0)
 </script>
