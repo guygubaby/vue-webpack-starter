@@ -1,5 +1,10 @@
 # vue-webpack-starter
 
+## Getting Started
+```bash
+npx degit guygubaby/vue-webpack-starter my-project
+```
+
 ## Project setup
 ```
 pnpm install
